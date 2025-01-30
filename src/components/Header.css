@@ -1,0 +1,129 @@
+.header{
+    position: sticky;
+}
+.header {
+    display: flex;               
+    align-items: center;        
+    justify-content: space-between; 
+    background-color: #055466;  
+    padding: 20px 60px;         
+    color: white;               
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.header:hover {
+    background-color: #043e4a; /* Change background color on hover */
+}
+
+.logo {
+    font-size: 28px;              
+    border: 2px solid white;      
+    border-radius: 5px;        
+    padding: 6px;                
+    margin: 10px;               
+    text-align: center;          
+    color: white;                
+    background-color: #055466;    
+}
+
+.search-container {
+    position: relative;         
+}
+
+.search {
+    padding: 8px 40px 8px 10px; 
+    border: none;               
+    border-radius: 10px;        
+    margin: 0 20px;            
+    width: 200px;               
+    max-width: 100%;           /* Ensure search input is responsive */
+}
+
+.search:focus {
+    outline: none;              
+    border: 2px solid #0a3922; /* Highlight border on focus */
+}
+
+.search-icon {
+    position: absolute;         
+    right: -10px;               /* Adjusted for better alignment */
+    top: 50%;                  
+    transform: translateY(-50%); 
+    color: white;              
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;              
+}
+
+.nav a {
+    color: white;               
+    margin-left: 40px;         
+    text-decoration: none;      
+    transition: color 0.3s ease; 
+    font-size: 18px;
+}
+
+/* Toggle Button Styles */
+.toggle-button {
+    display: none;              /* Hide toggle button by default */
+    background: none;         
+    border: none;              
+    color: white;              
+    font-size: 24px;           
+    cursor: pointer;           
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 20px;   /* Reduce header padding on small screens */
+    }
+
+    .logo {
+        font-size: 28px;           /* Logo font size */
+        border: 2px solid black;   /* Solid black border */
+        border-radius: 5px;       /* Rounded corners */
+    }
+
+    .nav {
+        display: none;           /* Hide nav links by default on small screens */
+        flex-direction: column;  /* Stack links vertically */
+        position: absolute;      /* Position the nav absolutely */
+        top: 120px;               /* Adjust to position below the header */
+        left: 0;                 /* Align to the left */
+        width: 100%;             /* Full width */
+        background-color: #055466;  /* Background color */
+        padding: 10px 0;         /* Padding for nav */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+    }
+
+    .nav.open {
+        display: flex;           /* Show nav when open */
+    }
+
+    .nav a {
+        margin: 10px 0;         /* Margin for vertical stacking */
+        text-align: center;      /* Center-align links */
+        padding: 10px;           /* Add padding for touch targets */
+        background-color: transparent; /* Ensure no background color */
+    }
+
+    .toggle-button {
+        display: block;          /* Show toggle button on small screens */
+    }
+
+    /* Prevent hover effect on toggle button */
+    .toggle-button:hover {
+        background-color: transparent; /* Ensure no background color on hover */
+    }
+}
+
+.border-link {
+    border: 2px solid #ffffff; /* Yellow border */
+    border-radius: 5px;        /* Rounded corners */
+    background-color: black;    /* Background color */
+    padding: 8px;
+}
+

@@ -1,0 +1,29 @@
+.container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.parallax {
+    background-image: url('../product-image/product.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%; /* Full width for the parallax section */
+    height: 500px; /* Height of the parallax section */
+    background-size: cover; /* Cover the entire section */
+}
+
+.product-content {
+    padding: 50px;
+    font-size: 40px;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
+    color: white; /* Text color */
+}
+

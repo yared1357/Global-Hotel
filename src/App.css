@@ -1,0 +1,22 @@
+/* App.css */
+html, body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure the body takes the full height */
+  background-color: rgb(195, 187, 187);
+  width: 100%;
+}
+
+body {
+  display: flex; /* Use flexbox for body */
+  flex-direction: column; /* Column layout for header, main, and footer */
+}
+
+main {
+  flex: 1; /* Allow main to grow and fill available space */
+  display: flex;
+  flex-direction: column; /* Stacking the content vertically if needed */
+  justify-content: space-between; /* Space out content */
+  min-height: calc(100vh - 100px); /* Adjust min-height based on header and footer heights */
+}
+
