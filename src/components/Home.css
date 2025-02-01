@@ -150,12 +150,12 @@ body {
 }
 @media(max-width:768px){
     .parallax1{
-        width:96%;
+        width:90%;
     }
     .page-title {
         
-        padding: 50px;
-        font-size: 20px;
+        padding: 25px;
+        font-size: 15px;
         font-family: fantasy;
         letter-spacing: 2px;
     }
