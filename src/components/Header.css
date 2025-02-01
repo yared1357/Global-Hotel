@@ -53,6 +53,13 @@
     cursor: pointer;
 }
 
+@media(max-width:768px){
+    .search-container{
+        width:20%;
+        padding-right: 120px;
+    }
+}
+
 .nav {
     display: flex;              
 }
@@ -126,4 +133,10 @@
     background-color: black;    /* Background color */
     padding: 8px;
 }
+@media(max-width:768px){
+    .logo{
+        font-size: 18px;
+    }
+}
+
 
