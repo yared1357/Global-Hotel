@@ -151,6 +151,7 @@ body {
 @media(max-width:768px){
     .parallax1{
         width:90%;
+        height: 380px;
     }
     .page-title {
         
