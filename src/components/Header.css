@@ -55,7 +55,7 @@
 
 @media(max-width:768px){
     .search-container{
-        width: 30%;
+        width: 10%;
         padding-right: 120px;
     }
 }
