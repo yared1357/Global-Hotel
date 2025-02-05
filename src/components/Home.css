@@ -183,4 +183,10 @@ body {
         font-size: 1.4rem;
     }
 }
+@media (max-width: 768px) {
+    .sub-container2 .sub-container3 p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.1rem;
+    }
+}
 
