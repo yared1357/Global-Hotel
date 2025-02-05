@@ -27,7 +27,7 @@
 }
 
 .search-container {
-    position: relative;         
+    position: relative;            
 }
 
 .search {
@@ -56,7 +56,7 @@
 @media(max-width:768px){
     .search-container{
         width: 35%;
-        padding-right: 110px;
+        padding-right: 100px;
     }
 }
 
