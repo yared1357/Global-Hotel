@@ -139,4 +139,11 @@
     }
 }
 
+@media(max-width:768px){
+    .toggle-button{
+        font-size: 30px;
+        font-weight: bold;
+        }
+    }
+
 
