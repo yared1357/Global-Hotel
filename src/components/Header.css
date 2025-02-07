@@ -101,7 +101,7 @@
         top: 85px;               /* Adjust to position below the header */
         left: 0;                 /* Align to the left */
         width: 100%;             /* Full width */
-        background-color: #055466;  /* Background color */
+        background-color: #033742;  /* Background color */
         padding: 10px 0;         /* Padding for nav */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
     }
