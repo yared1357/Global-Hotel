@@ -168,15 +168,16 @@ body {
             align-items: center;         /* Centers content vertically */
             margin: 0 auto;             /* Center the div itself */
         }
+        .page-title {
+            padding: 25px;
+            font-size: 1.8rem;
+            font-family: fantasy;
+            letter-spacing: 2px;
+        }
     }
 
 
-    .page-title {
-        padding: 25px;
-        font-size: 1.8rem;
-        font-family: fantasy;
-        letter-spacing: 2px;
-    }
+    
 
 
 @media (max-width: 768px) {
