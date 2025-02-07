@@ -85,7 +85,7 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
     .header {
-        padding: 10px 20px;   /* Reduce header padding on small screens */
+        padding: 10px 10px;   /* Reduce header padding on small screens */
     }
 
     .logo {
