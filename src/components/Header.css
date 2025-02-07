@@ -98,7 +98,7 @@
         display: none;           /* Hide nav links by default on small screens */
         flex-direction: column;  /* Stack links vertically */
         position: absolute;      /* Position the nav absolutely */
-        top: 120px;               /* Adjust to position below the header */
+        top: 85px;               /* Adjust to position below the header */
         left: 0;                 /* Align to the left */
         width: 100%;             /* Full width */
         background-color: #055466;  /* Background color */
