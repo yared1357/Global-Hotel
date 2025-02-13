@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-container">
             <div className="footer-content">
                 <div className="footer-section">
-                    <h3>ENDALKFITNESS</h3>
+                    <h3>GLOBAL HOTEL</h3>
                     <p>Ethiopia, Addis Ababa</p>
                     <p>Phone: +251 926-862-255</p>
                     <p>Email: yared1357@gmail.com</p>

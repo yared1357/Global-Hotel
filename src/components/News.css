@@ -9,7 +9,7 @@
 
 
 .parallax3 {
-    background-image: url('../images/image4.jpg'); 
+    background-image: url('../images/image6.jpg'); 
     height: 500px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 
 @media (max-width: 768px) {
     .parallax3 {
-        background-image: url('../images/image4.jpg'); 
+        background-image: url('../images/image6.jpg'); 
         background-size: cover;       /* Makes the image cover the entire div */
         background-position: center;  /* Centers the background image */
         width: 90%;
@@ -45,16 +45,11 @@
     }
     .service-content {
         padding: 25px;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-family: fantasy;
         letter-spacing: 2px;
     }
 }
-
-
-
-
-
 
 .sub-container2{
     display: flex;
@@ -65,7 +60,7 @@
     flex:1;
 }
 .left h2{
-    color: white;
+    color: #000;
     font-size: 35px;
     text-align: center;
 }
@@ -107,7 +102,7 @@ flex:1;
     padding: 10px;
 }
 .sub2 h2{
-    color: white;
+    color: #000;
     font-size: 35px;
 }
 .sub2 p{
