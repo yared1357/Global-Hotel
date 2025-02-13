@@ -6,7 +6,7 @@ import './About.css';
 const News=()=>{
     return (
         <div className="container">
-            <div className="parallax2">
+            <div className="parallax3">
                 <div className="aboutcontent">Latest News From Global International Hotel</div>
             </div>
             
