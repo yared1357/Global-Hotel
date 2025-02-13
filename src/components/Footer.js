@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-container">
             <div className="footer-content">
                 <div className="footer-section">
-                    <h3>GLOBAL HOTEL</h3>
+                    <h3>GLOBAL HOTEL ADDRESS</h3>
                     <p>Ethiopia, Addis Ababa</p>
                     <p>Phone: +251 926-862-255</p>
                     <p>Email: yared1357@gmail.com</p>
@@ -20,6 +20,8 @@ const Footer = () => {
                     <Link to="/about">About</Link>
                     <Link to="/services">Services</Link>
                     <Link to="/contact">Contact</Link>
+                    <Link to="/login">Login</Link>
+                    <Link to="/signup">Sign Up</Link>
                 </div>
                 <div className="footer-section">
                     <h3>SERVICES FOR</h3>
