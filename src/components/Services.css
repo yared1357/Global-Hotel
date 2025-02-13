@@ -6,27 +6,59 @@
     display: flex;
     flex-direction: column;
 }
-.parallax3{
-    background-image: url('../images/image4.jpg');
+
+.parallax3 {
+    background-image: url('../images/image4.jpg'); 
+    height: 500px;
     background-attachment: fixed;
-    background-position: center;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
     color: white;
     width:90%;
-    height: 500px;
-    background-size: cover;
 }
-.service-content{
+
+.service-content {
+    background: rgba(0, 0, 0, 0.5); 
     padding: 50px;
+    font-size: 50px;
     font-family: fantasy;
-    font-size: 40px;
     letter-spacing: 3px;
-    background: rgba(0,0,0,0.5);
 }
+
+
+@media (max-width: 768px) {
+    .parallax3 {
+        background-image: url('../images/image4.jpg'); 
+        background-size: cover;       /* Makes the image cover the entire div */
+        background-position: center;  /* Centers the background image */
+        width: 90%;
+        height: 280px;
+        display: flex;               /* Enables flexbox layout */
+        justify-content: center;     /* Centers content horizontally */
+        align-items: center;         /* Centers content vertically */
+    }
+    .service-content {
+        padding: 25px;
+        font-size: 1.8rem;
+        font-family: fantasy;
+        letter-spacing: 2px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 .sub-container2{
     display: flex;
     flex-direction: row;
