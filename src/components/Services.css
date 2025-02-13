@@ -172,3 +172,26 @@ font-size: 20px;
     border-radius: 1px solid black;
     border: 40%;
 }
+
+
+@media (max-width: 768px) {
+    .sub-container2 .room,
+    .sub-container3 .dining {
+        width: 94%; /* Set width to 94% */
+        height: 280px; /* Set height to 250px */
+    }
+}
+
+@media (max-width: 768px) {
+    .sub-container2 .sub-container3 h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sub-container1 .sub-container2 .sub-container3 p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.1rem;
+    }
+}
