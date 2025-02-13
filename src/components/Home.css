@@ -5,13 +5,6 @@
     justify-content: center;
     width:100%;
 }
-@media(max-width:768px){
-    .container{
-        width: 100%;
-    }
-}
-
-
 .sub-container1 {
     width: 90%;
     margin: 0 auto;
@@ -19,28 +12,16 @@
     border-radius: 1px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
 .sub-container1 p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
 }
 
-@media(max-width:768px){
-    .sub-container1 p{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 1.1rem;
-    }
-}
-    
+
 .hotel-image {
     height: 500px;
     width: 100%;
     border-radius: 5px;
-}
-
-.sub-container1 p {
-    color: rgb(18, 3, 3);
-    font-size: 20px;
 }
 
 .container h1 {
@@ -192,8 +173,9 @@
         font-size: 1.4rem;
     }
 }
+
 @media (max-width: 768px) {
-    .sub-container2 .sub-container3 p {
+    .sub-container1 .sub-container2 .sub-container3 p {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 1.1rem;
     }
