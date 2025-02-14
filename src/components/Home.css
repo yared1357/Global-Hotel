@@ -17,13 +17,6 @@
     font-size: 1.4rem;
 }
 
-
-.hotel-image {
-    height: 500px;
-    width: 100%;
-    border-radius: 5px;
-}
-
 .container h1 {
     font-size: 40px;
     text-align: center;
@@ -177,7 +170,7 @@
 @media (max-width: 768px) {
     .sub-container1 .sub-container2 .sub-container3 p {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 }
 
