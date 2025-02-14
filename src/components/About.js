@@ -12,7 +12,6 @@ const About=()=>{
             
             <div className="sub-container2">
 <div className="left">
-    <h2>Our Green Spaces</h2>
     <p>At Global International Hotel, we believe in the importance of sustainability and the well-being of our guests and the planet. Our beautifully landscaped green areas provide a serene escape from the hustle and bustle of city life.</p>
     <p>Guests can enjoy lush gardens, tranquil water features, and shaded seating areas, perfect for relaxation or casual gatherings. We are committed to eco-friendly practices, utilizing native plants to reduce water consumption and implementing organic gardening methods.</p>
 </div>
@@ -25,7 +24,6 @@ const About=()=>{
     <img src={about2} alt="about2 pic" className="about2"/>
 </div>
 <div className="sub2">
-    <h2>Luxury Rooms</h2>
     <p>Experience unparalleled comfort and elegance in our Luxury Rooms at Global International Hotel. Each room is meticulously designed to provide a serene retreat, featuring plush king-sized beds adorned with premium linens, spacious layouts, and stunning views of the city skyline or tranquil gardens.</p>
     <p>Modern amenities, including a flat-screen TV, complimentary high-speed Wi-Fi, and a fully stocked minibar, ensure that your stay is both convenient and enjoyable. The en-suite bathrooms boast luxurious soaking tubs and rainfall showers, complemented by high-end toiletries and soft bathrobes, creating a spa-like atmosphere.</p>
 </div>

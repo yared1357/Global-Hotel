@@ -49,7 +49,6 @@ const Services = () => {
 
             <div className="sub-container2">
                 <div className="left">
-                    <h2>Luxury Room</h2>
                     <p>Indulge in the elegance of our luxury rooms at Global International Hotel, where comfort meets sophistication. Each room features plush king-size beds, exquisite decor, and stunning views, creating a serene retreat for discerning travelers.</p>
                     <p>Enjoy modern amenities, including a flat-screen TV, high-speed Wi-Fi, and a lavish en-suite bathroom with a soaking tub and rain shower. With attentive service and a commitment to excellence, our luxury rooms offer an unforgettable experience, ensuring your stay is both relaxing and rejuvenating. Escape to a world of luxury and make your visit truly exceptional.</p>
                 </div>
@@ -62,7 +61,6 @@ const Services = () => {
                     <img src={dining} alt="dining" className="dining"/>
                 </div>
                 <div className="sub2">
-                    <h2>Exceptional Dining Service</h2>
                     <p>At Global International Hotel, our dining service is designed to elevate your
                          culinary experience to new heights. Our signature restaurant showcases a menu 
                          crafted by renowned chefs who blend local flavors with international cuisine, 

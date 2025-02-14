@@ -39,7 +39,7 @@ const Home = () => {
                     <img src={image2} alt='Showcasing the hotel amenities' className='left-image' />
                 </div>
                 <div className='right'>
-                    <h2>Our New Features!</h2>
+
                     <p>
                         We are thrilled to announce the launch of our Global International Hotel Mobile App! Designed with your convenience in mind, our app allows you to manage your stay effortlessly. Experience seamless booking, check-in and check-out options, and real-time access to exclusive offers directly from your smartphone.
                     </p>
@@ -51,8 +51,7 @@ const Home = () => {
 
             <div className='sub-container3'>
                 <div className='sub1'>
-                    <h2>Our Newly Constructed Building</h2>
-                    <p>We are thrilled to announce the opening of our newly constructed building at Global International Hotel, designed with modern elegance and guest comfort in mind. This state-of-the-art facility boasts spacious rooms with breathtaking views, contemporary decor, and the latest amenities to ensure a luxurious stay.</p>
+                    <p>We are thrilled to announce the opening of our newly constructed building at Global International Hotel, designed with modern elegance and guest comfort in mind. This state of the art facility boasts spacious rooms with breathtaking views, contemporary decor, and the latest amenities to ensure a luxurious stay.</p>
                     <p>Guests can enjoy enhanced features such as a rooftop infinity pool, a fully equipped fitness center, and an upscale restaurant offering gourmet dining experiences.</p>
                 </div>
                 <div className='sub2'>

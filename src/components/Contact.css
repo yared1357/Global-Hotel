@@ -5,6 +5,11 @@
     flex-direction: column;
     margin: 0;
 }
+@media(max-width:768px){
+    .container{
+        width: 100%;
+    }
+}
 
 .frame{
     width: 96%;
