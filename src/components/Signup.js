@@ -1,113 +1,85 @@
-import React, { useState } from "react";
-import './SignUp.css';
+// src/Signup.js
+import React, { useState } from 'react';
+import './SignUp.css'; // Import the CSS file
 
-const SignUp = () => {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        password: "",
-        confirmPassword: ""
-    });
-
-    const [errors, setErrors] = useState({});
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-    };
-
-    const validateForm = () => {
-        const newErrors = {};
-        if (!formData.name) newErrors.name = "Name is required.";
-        if (!formData.email) {
-            newErrors.email = "Email is required.";
-        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-            newErrors.email = "Email address is invalid.";
-        }
-        if (!formData.password) newErrors.password = "Password is required.";
-        if (formData.password !== formData.confirmPassword) {
-            newErrors.confirmPassword = "Passwords do not match.";
-        }
-        return newErrors;
-    };
+const Signup = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [error, setError] = useState('');
+    const [successMessage, setSuccessMessage] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const validationErrors = validateForm();
-        if (Object.keys(validationErrors).length > 0) {
-            setErrors(validationErrors);
-        } else {
-            console.log("Form submitted:", formData);
-            // Handle form submission logic here
-            setFormData({
-                name: "",
-                email: "",
-                password: "",
-                confirmPassword: ""
-            });
-            setErrors({});
+        if (password !== confirmPassword) {
+            setError('Passwords do not match');
+            return;
         }
+        // Handle signup logic here
+        console.log({ name, email, password });
+        setError(''); // Clear error if no issues
+        setSuccessMessage('Signup successful!'); // Set success message
+        // Clear fields after submission
+        setName('');
+        setEmail('');
+        setPassword('');
+        setConfirmPassword('');
     };
 
     return (
         <div className="signup-container">
             <h2>Create an Account</h2>
-            <form onSubmit={handleSubmit} className="signup-form">
+            {error && <div className="error-message">{error}</div>}
+            {successMessage && <div className="success-message">{successMessage}</div>}
+            <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Name:</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
+                    <input 
+                        type="text" 
+                        id="name" 
+                        value={name} 
+                        onChange={(e) => setName(e.target.value)} 
+                        required 
                     />
-                    {errors.name && <span className="error">{errors.name}</span>}
                 </div>
                 <div className="form-group">
                     <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
+                    <input 
+                        type="email" 
+                        id="email" 
+                        value={email} 
+                        onChange={(e) => setEmail(e.target.value)} 
+                        required 
                     />
-                    {errors.email && <span className="error">{errors.email}</span>}
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password:</label>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        value={formData.password}
-                        onChange={handleChange}
-                        required
+                    <input 
+                        type="password" 
+                        id="password" 
+                        value={password} 
+                        onChange={(e) => setPassword(e.target.value)} 
+                        required 
                     />
-                    {errors.password && <span className="error">{errors.password}</span>}
                 </div>
                 <div className="form-group">
                     <label htmlFor="confirmPassword">Confirm Password:</label>
-                    <input
-                        type="password"
-                        id="confirmPassword"
-                        name="confirmPassword"
-                        value={formData.confirmPassword}
-                        onChange={handleChange}
-                        required
+                    <input 
+                        type="password" 
+                        id="confirmPassword" 
+                        value={confirmPassword} 
+                        onChange={(e) => setConfirmPassword(e.target.value)} 
+                        required 
                     />
-                    {errors.confirmPassword && <span className="error">{errors.confirmPassword}</span>}
                 </div>
                 <button type="submit" className="submit-button">Sign Up</button>
             </form>
-            <p className="login-redirect">
-                Already have an account? <a href="/login">Log in</a>
-            </p>
+            <div className="login-redirect">
+                Already have an account? <a href="/login">Login</a>
+            </div>
         </div>
     );
 };
 
-export default SignUp;
+export default Signup;
