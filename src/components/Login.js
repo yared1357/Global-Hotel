@@ -43,13 +43,15 @@ const Login = () => {
 
     return (
         <div className="main-container">
-            
-            
+            <div className="containeroflogin"> 
+            <div className="sub-containerr">
+                <h1>Login Here!</h1>
+                <h2>Login and access your pages here!</h2>
+            </div>
         <div className="login-container">
+            <h2>Login Here!</h2>
             <form onSubmit={handleSubmit} className="login-form">
                 <div className="form-groups">
-                    <h1>Welcome back</h1>
-                    <p>Enter your credentials to access your account</p>
                     <label htmlFor="email">Email:</label>
                     <input
                         type="email"
@@ -80,7 +82,7 @@ const Login = () => {
             </p>
         </div>
         </div>
-        
+        </div>
     );
 };
 
