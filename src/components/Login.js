@@ -44,44 +44,43 @@ const Login = () => {
     return (
         <div className="main-container">
             <div className="containeroflogin"> 
-            <div className="sub-containerr">
-                <h1>Login Here!</h1>
-                <h2>Login and access your pages here!</h2>
+                <div className="parallax2">
+                    <div className="aboutcontent">Welcome Back to Login Page!</div>
+                </div>
+                <div className="login-container">
+                    <h1>Login Here!</h1>
+                    <form onSubmit={handleSubmit} className="login-form">
+                        <div className="form-groups">
+                            <label htmlFor="email">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                required
+                            />
+                            {errors.email && <span className="error">{errors.email}</span>}
+                        </div>
+                        <div className="form-groups">
+                            <label htmlFor="password">Password:</label>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                value={formData.password}
+                                onChange={handleChange}
+                                required
+                            />
+                            {errors.password && <span className="error">{errors.password}</span>}
+                        </div>
+                        <button type="submit" className="submit-button">Login</button>
+                    </form>
+                    <p className="signup-redirect">
+                        Don't have an account? <a href="/signup">Sign up</a>
+                    </p>
+                </div>
             </div>
-        <div className="login-container">
-            <h2>Login Here!</h2>
-            <form onSubmit={handleSubmit} className="login-form">
-                <div className="form-groups">
-                    <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                    {errors.email && <span className="error">{errors.email}</span>}
-                </div>
-                <div className="form-groups">
-                    <label htmlFor="password">Password:</label>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        value={formData.password}
-                        onChange={handleChange}
-                        required
-                    />
-                    {errors.password && <span className="error">{errors.password}</span>}
-                </div>
-                <button type="submit" className="submit-button">Login</button>
-            </form>
-            <p className="signup-redirect">
-                Don't have an account? <a href="/signup">Sign up</a>
-            </p>
-        </div>
-        </div>
         </div>
     );
 };

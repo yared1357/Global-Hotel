@@ -1,72 +1,61 @@
-.main-container{
-   width:100%; 
-   display: flex;
-   flex-direction: column;
-   text-align: center;
-   align-items: center;
-   justify-content: center;
-   padding: 0;
-   margin: 0;
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; /* Center the main container */
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
-.containeroflogin{
+
+.containeroflogin {
     display: flex;
     flex-direction: row;
-    padding:10px;
-    width:100%;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+    width: 100%;
     height: 100vh;
-    
-}
-.sub-containerr{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #4d4d4d;
-    height: 100vh;
-    padding: 20px;
-    width:92%;
 }
 
-
-.sub-containerr h1{
-    color: white;
-}
-
-.login-container{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.login-container {
     background-color: #fff;
-    height: 100vh;
+    height: 95%;
+    width: 50%; /* Adjust width for the login container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the container vertically */
+    align-items: center; /* Center items in the container */
     padding: 20px;
-    width: 92%;
 }
 
-h2 {
-    text-align: center; /* Center the title */
+h1 {
     margin-bottom: 20px; /* Space below the title */
-    color: white;
 }
 
 .form-groups {
     margin-bottom: 15px;
-    width: 50px; /* Use full width of the container */
+    width: 100%; /* Use full width of the container */
 }
 
 label {
     display: block;
-    width: 100%; /* Full width of the form group */
     margin-bottom: 5px;
     font-weight: bold;
+    text-align: left; /* Align label text to the left */
+    width: 100%; /* Ensure labels take full width for left alignment */
 }
 
 input {
-    width: 600px; /* Maintain 80% width for inputs */
+    width: 500px; /* Use full width for inputs */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+@media(max-width:768px){
+    .form-groups input{
+        width: 400px;
+    }
 }
 
 .error {
@@ -76,21 +65,21 @@ input {
 }
 
 .submit-button {
-    width: 20%; 
+    width: 500px; /* Adjust button width */
     padding: 10px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 15px;
+    font-size: 1rem; /* Adjust font size */
     font-weight: bold;
-
-    /* Align the button to the left */
-    display: block; /* Make it a block element */
-    margin-left: 0; /* Align to the left */
-    margin-right: auto; /* Remove right margin */
+}
+@media(max-width:768px){
+    .submit-button button{
+        width: 400px;
+    }
 }
 
 .submit-button:hover {
@@ -101,28 +90,47 @@ input {
     text-align: center; /* Center the redirect message */
     margin-top: 15px; /* Space above */
 }
-@media(max-width:768px){
-    .containeroflogin{
-      flex-direction: column;
-    }
-    .form-group input{
-       width: 300px;
-    }
-    .submit-button{
-        width:40%;
-    }
-    .login-container{
-        width:98%;
-    }
-    .form-groups input {
-        width: 380px;
-    } 
-    .sub-containerr{
-        margin-top: 0;
-    }
+
+
+.parallax2 {
+    background-image: url('../images/image2.jpg'); 
+    height: 100%;
+    width: 50%; /* Adjust width for the parallax section */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
-@media(max-width:768px){
-    .form-groups input{
-width:400px;
+
+.aboutcontent {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    font-size: 2rem; /* Adjust font size */
+    font-family: 'Fantasy';
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .containeroflogin {
+        flex-direction: column;
+    }
+    .parallax2, .login-container {
+        width: 100%; /* Full width on smaller screens */
+        height: 50%; /* Adjust height */
+    }
+    .aboutcontent {
+        font-size: 1.5rem; /* Adjust font size */
+        padding: 20px;
+    }
+    .submit-button {
+        width: 80%; /* Full width for the button on smaller screens */
     }
 }
