@@ -44,7 +44,7 @@ const Login = () => {
     return (
         <div className="main-container">
             <div className="containeroflogin"> 
-                <div className="parallax2">
+                <div className="parallax6">
                     <div className="aboutcontent">Welcome Back to Login Page!</div>
                 </div>
                 <div className="login-container">

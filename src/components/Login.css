@@ -92,8 +92,8 @@ input {
 }
 
 
-.parallax2 {
-    background-image: url('../images/image2.jpg'); 
+.parallax6 {
+    background-image: url('../images/login.jpg'); 
     height: 100%;
     width: 50%; /* Adjust width for the parallax section */
     background-attachment: fixed;
@@ -109,7 +109,7 @@ input {
 .aboutcontent {
     background: rgba(0, 0, 0, 0.5); 
     padding: 20px;
-    font-size: 2rem; /* Adjust font size */
+    font-size: 2.4rem; /* Adjust font size */
     font-family: 'Fantasy';
     letter-spacing: 2px;
     text-align: center;
@@ -120,7 +120,7 @@ input {
     .containeroflogin {
         flex-direction: column;
     }
-    .parallax2, .login-container {
+    .parallax6, .login-container {
         width: 100%; /* Full width on smaller screens */
         height: 50%; /* Adjust height */
     }
