@@ -50,7 +50,7 @@ label {
     text-align: center; /* Center error messages */
 }
 
-.submit-button {
+.signup-button {
     width: 90%; /* Full width for button */
     padding: 12px; /* Increased padding */
     background-color: #007bff; /* Primary color */
@@ -68,7 +68,7 @@ label {
     background-color: #0056b3; /* Darker blue on hover */
 }
 @media(max-width:768px){
-    .submit-button{
+    .signup-button{
         width:90%;
     }
 }
