@@ -3,7 +3,7 @@
     max-width: 400px; /* Maximum width for larger screens */
     margin: 40px auto; /* Center the container with margin auto */
     padding: 3%; /* Added percentage padding for better spacing */
-    background: #f0f2f5; /* Light gray background for the form */
+    background: #fff; /* Light gray background for the form */
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     display: flex;
@@ -56,12 +56,13 @@ label {
     background-color: #007bff; /* Primary color */
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 12px;
     cursor: pointer;
     transition: background-color 0.3s; /* Smooth transition */
     font-size: 16px; /* Larger font size for better readability */
     font-weight: bold;
-    margin-top: 10px; /* Space above the button */
+    margin: 10px auto; /* Space above and center the button */
+    display: block; /* Center the button */
 }
 
 .submit-button:hover {
