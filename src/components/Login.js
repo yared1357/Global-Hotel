@@ -48,7 +48,8 @@ const Login = () => {
                     <div className="aboutcontent">Welcome Back to Login Page!</div>
                 </div>
                 <div className="login-container">
-                    <h1>Login Here!</h1>
+                    <h2>Login Here!</h2>
+                    <p>Don't Share Your Credentials With Anyone!</p>
                     <form onSubmit={handleSubmit} className="login-form">
                         <div className="form-groups">
                             <label htmlFor="email">Email:</label>

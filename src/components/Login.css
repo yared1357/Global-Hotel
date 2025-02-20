@@ -46,7 +46,7 @@ label {
 }
 
 input {
-    width: 500px; /* Use full width for inputs */
+    width: 100%; /* Use full width for inputs */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
